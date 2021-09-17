@@ -12,6 +12,7 @@
     <title>@yield('titulo')</title>
 </head>
 <body class="{{$clase}}">
+    @include('loader')
     @if ($titulo == "Hunter x Hunter")
         @include('componente/header')
     @endif
