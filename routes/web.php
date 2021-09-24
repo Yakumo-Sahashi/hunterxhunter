@@ -13,44 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $titulo = "Hunter x Hunter";
-    $clase = "bg-home";
-    return view('welcome', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/', 'App\Http\Controllers\InicioController@index');
 
-Route::get('/informacion', function () {
-    $titulo = "Informacion";
-    $clase = "bg-info";
-    return view('/seccion/informacion', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/informacion', 'App\Http\Controllers\InicioController@informacion');
 
-Route::get('/historia', function () {
-    $titulo = "Historia";
-    $clase = "bg-hisoria";
-    return view('/seccion/historia', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/historia', 'App\Http\Controllers\InicioController@historia');
 
-Route::get('/personajes', function () {
-    $titulo = "Personajes";
-    $clase = "bg-per";
-    return view('/seccion/personajes', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/personajes', 'App\Http\Controllers\InicioController@personajes');
 
-Route::get('/episodios', function () {
-    $titulo = "Episodios";
-    $clase = "bg-epi";
-    return view('/seccion/episodios', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/episodios', 'App\Http\Controllers\InicioController@episodios');
 
-Route::get('/manga', function () {
-    $titulo = "Manga";
-    $clase = "bg-manga";
-    return view('/seccion/manga', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/manga', 'App\Http\Controllers\InicioController@manga');
 
-Route::get('/opening', function () {
-    $titulo = "Openings";
-    $clase = "bg-opening";
-    return view('/seccion/opening', ['titulo' => $titulo,'clase' => $clase]);
-});
+Route::get('/opening', 'App\Http\Controllers\InicioController@opening');

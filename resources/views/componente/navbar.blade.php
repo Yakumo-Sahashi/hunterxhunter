@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="btn btn-dark" href="/">Inicio</a>
+                    <a class="btn btn-dark" href="/"><i class="fs-5 bi bi-house"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-dark" href="informacion">Informacion</a>
